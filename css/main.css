@@ -1,0 +1,61 @@
+.vertical-center { /* CREDIT: https://stackoverflow.com/questions/22196587/how-to-center-align-vertically-the-container-in-bootstrap/22196760#22196760*/
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
+header {
+    display: block;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ nav a {
+     display: block;
+     color: white;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+ }
+nav li {
+    float: left;
+}
+
+nav a:hover {
+    background-color: #111;
+}
+
+
+.even {
+ background: black;
+    color: white;
+}
+
+.odd{
+
+    background: white;
+    color: black;
+}
+
+ul#pagination{
+    list-style: none;
+}
+#pagination li {
+    float: left;
+    display: block;
+
+}
+
+#pagination a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}

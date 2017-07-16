@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>#pageContainer {
+        width: 410px;
+        margin: 0px auto;
+    }
+
+    #contactGrid {
+        width: 410px;
+        margin: 10px auto;
+        overflow: hidden;
+        position: relative;
+    }
+
+    #contactGrid .contact {
+        float: left;
+        width: 200px;
+        margin: 10px 0px;
+    }
+
+    .contact img {
+        float: left;
+        margin-right: 5px;
+        margin-bottom: 10px;
+    }
+
+    .contact h2 {
+        font-size: 14px;
+    }
+
+    .contact p {
+        font-size: 12px;
+    }
+
+    #contactPagination {
+        clear: both;
+        margin-left: 50px;
+    }
+
+    #contactPagination li {
+        float: left;
+        list-style: none;
+    }
+
+    #contactPagination li a {
+        padding: 5px;
+        margin: 5px;
+        border: 1px solid blue;
+        text-decoration: none;
+    }
+
+    #contactPagination li:hover a {
+        color: orange;
+        border: 1px solid orange;
+    }
+
+    #contactPagination li a.active {
+        color: black;
+        border: 1px solid black;
+    }</style>
+
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.js"
+            integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+            crossorigin="anonymous"></script>
+    <script src="pagination.js" />
+</head>
+
+<body>
+<div id="pageContainer">
+    <div id="contactGrid">
+        <div class="contact"><img src="images/avatar.png" alt="avatar"/>
+            <h2>Milan Sedliak</h2>
+            <p>Prague, Czech Republic</p></div><!-- // add more contacts -->
+        <div class="contact"><img src="images/avatar.png" alt="avatar"/>
+            <h2>Milan Sedliak (home)</h2>
+            <p>Malacky, Slovakia</p></div>
+    </div>
+    <ul id="contactPagination">
+        <li><a href="#previous" id="previous">Previous</a></li>
+        <li><a href="#1" id="1">1</a></li>
+        <li><a href="#2" id="2">2</a></li>
+        <li><a href="#3" id="3">3</a></li>
+        <li><a href="#4" id="4">4</a></li>
+        <li><a href="#5" id="5" class="active">5</a></li>
+        <li><a href="#6" id="6">6</a></li>
+        <li><a href="#7" id="7">7</a></li>
+        <li><a href="#next" id="next">Next</a></li>
+    </ul>
+</div>
+</body>
+</html>
+
+
